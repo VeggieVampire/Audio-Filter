@@ -30,6 +30,15 @@ for n,i in enumerate(data):
         data[n]= UpClip + 1
 
 
+#Amplify all upper values
+for n,i in enumerate(data):
+    if i >= UpClip + 5:
+        data[n]= 800000
+
+#Make all BottomClips 0
+for n,i in enumerate(data):
+    if i <= BottomClip + 5:
+        data[n]= 0
 
 
 #Show changed plot
